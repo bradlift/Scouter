@@ -1,6 +1,6 @@
 # Getting Started
 
-0. Download Scouter.zip from Releases (Initial release - v1.0.0)
+0. Download Scouter.zip from Releases ([Initial release - v1.0.0](https://github.com/bradlift/Scouter/releases/tag/v1.0.0))
 1. Unzip the file and navigate into the Scouter folder in a terminal window
 2. if this is your first time, run `npm install` to install dependencies 
 3. Copy/paste the sample query into a Looker SQL Runner window
@@ -14,7 +14,7 @@
 11. Once all requests are completed, the BR.json files will be served on localhost via a python3 server (which can be used in VX demo app via the online bid response model)
 
 
-### See Looker_sample_query.sql for an example you can paste into Looker SQL runner. 
+### See [Looker_sample_query.sql](https://github.com/bradlift/Scouter/blob/main/Looker_sample_query.sql) for an example you can paste into Looker SQL runner. 
 - Replace the values for _adomain_ and _winner_account_id_ and/or uncomment the 7 day filter
 - Notice the _API_String_ field formed by combining _winner_account_id_ and _external_creative_id_. The `CONCAT` used in the example will also enclose values with "" and end it with a comma, which makes it easier to copy into index.js
 
