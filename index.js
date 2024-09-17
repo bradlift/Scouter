@@ -30,7 +30,7 @@ async function getBidResponses(a) {
                 console.log(pasteHere[w]);
               if(response.body.length > 70) {
                   obj.bidResArr.push(JSON.stringify(response.body));
-                  fs.writeFile(`WebServer/bid_responses/_br_${w}.json`,response.body,(err)=>{console.log(err)});
+                  fs.writeFile(`WebServer/bid_responses/${a[w]}.json`,response.body,(err)=>{console.log(err)});
                   response_counter+=1;
                   fs.writeFile(`WebServer/bid_responses/br_${w}_${a[w]}.html`,`<html> <meta name="viewport" content="width=device-width, initial-scale=1" /> <script> function myFunction() {
                     // Get the text field
